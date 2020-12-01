@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Arka Android Two</string>
+    <string name="hello_world">HELLO WORLD!</string>
+    <string name="activity_one">Activity One</string>
+    <string name="to_activity_one">To Activity One</string>
+    <string name="activity_two">Activity Two</string>
+    <string name="to_activity_two">To Activity Two</string>
+    <string name="three_activity">Three Activity</string>
+    <string name="to_activity_three">To Activity Three</string>
+    <string name="back">Back</string>
 </resources>
