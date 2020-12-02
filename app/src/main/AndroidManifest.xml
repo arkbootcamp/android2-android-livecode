@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_arka_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArkaAndroidTwo">
-        <activity android:name=".ThreeActivity"></activity>
+        <activity android:name=".ConstraintLayoutActivity"></activity>
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".LinearLayoutActivity" />
+        <activity android:name=".ThreeActivity" />
         <activity android:name=".TwoActivity" />
         <activity android:name=".OneActivity" />
         <activity android:name=".MainActivity">

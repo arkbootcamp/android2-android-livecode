@@ -8,4 +8,18 @@
     <string name="three_activity">Three Activity</string>
     <string name="to_activity_three">To Activity Three</string>
     <string name="back">Back</string>
+    <string name="biodata_pribadi">BIODATA PRIBADI</string>
+    <string name="full_name">Full name</string>
+    <string name="address">Address</string>
+    <string name="dob">DOB</string>
+    <string name="submit">Submit</string>
+    <string name="to_linear_layout">To Linear Layout</string>
+    <string name="backdrop">BACKDROP</string>
+    <string name="click_me">CLICK ME!</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="note">Note</string>
+    <string name="type">Type</string>
 </resources>

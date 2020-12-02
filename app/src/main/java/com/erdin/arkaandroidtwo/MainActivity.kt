@@ -4,19 +4,20 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         Log.d("lifecyle", "onCreate()")
         Toast.makeText(this, "Activity: onCreate()", Toast.LENGTH_SHORT).show()
 
         val btnActivityOne = findViewById<Button>(R.id.btn_activity_one)
         val btnActivityTwo = findViewById<Button>(R.id.btn_activity_two)
+        val btnActivityLinear = findViewById<Button>(R.id.btn_linear_layout)
 
         btnActivityOne.setOnClickListener {
             val intentA = Intent(this, OneActivity::class.java)
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentTwo)
         }
 
+        btnActivityLinear.setOnClickListener(this)
     }
 
     override fun onStart() {
@@ -71,6 +73,16 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("lifecycle", "onDestroy()")
         Toast.makeText(this, "Activity: onDestroy()", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btn_linear_layout -> {
+                val intent = Intent(this, LinearLayoutActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
     }
 
 
