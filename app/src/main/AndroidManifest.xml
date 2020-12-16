@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_arka_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArkaAndroidTwo">
-        <activity android:name=".ConstraintLayoutActivity"></activity>
+        <activity android:name=".dialog.DialogActivity"></activity>
+        <activity android:name=".databinding.SimpleDataBindingActivity" />
+        <activity android:name=".fragment.SimpleFragmentActivity" />
+        <activity
+            android:name=".toolbar.SimpleToolbarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ConstraintLayoutActivity" />
         <activity android:name=".RelativeActivity" />
         <activity android:name=".FrameLayoutActivity" />
         <activity android:name=".LinearLayoutActivity" />

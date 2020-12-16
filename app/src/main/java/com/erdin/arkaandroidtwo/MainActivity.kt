@@ -7,6 +7,8 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.erdin.arkaandroidtwo.dialog.DialogActivity
+import com.erdin.arkaandroidtwo.toolbar.SimpleToolbarActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +20,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnActivityOne = findViewById<Button>(R.id.btn_activity_one)
         val btnActivityTwo = findViewById<Button>(R.id.btn_activity_two)
         val btnActivityLinear = findViewById<Button>(R.id.btn_linear_layout)
+        val btnActivityToolbar = findViewById<Button>(R.id.btn_toolbar)
+        val btnActivityDialog = findViewById<Button>(R.id.btn_dialog)
 
         btnActivityOne.setOnClickListener {
             val intentA = Intent(this, OneActivity::class.java)
@@ -30,7 +34,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intentTwo)
         }
 
+        btnActivityDialog.setOnClickListener {
+            val intentA = Intent(this, DialogActivity::class.java)
+            startActivity(intentA)
+        }
+
         btnActivityLinear.setOnClickListener(this)
+        btnActivityToolbar.setOnClickListener(this)
     }
 
     override fun onStart() {
@@ -81,7 +91,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, LinearLayoutActivity::class.java)
                 startActivity(intent)
             }
-
+            R.id.btn_toolbar -> {
+                val intent = Intent(this, SimpleToolbarActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

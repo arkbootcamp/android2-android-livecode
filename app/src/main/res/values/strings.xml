@@ -22,4 +22,7 @@
     <string name="login">Login</string>
     <string name="note">Note</string>
     <string name="type">Type</string>
+    <string name="to_activity_toolbar">To Activity Toolbar</string>
+    <string name="content">Content</string>
+    <string name="to_dialog_activity">To Dialog Activity</string>
 </resources>
