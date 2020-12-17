@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.erdin.arkaandroidtwo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_arka"
@@ -9,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_arka_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArkaAndroidTwo">
-        <activity android:name=".dialog.DialogActivity"></activity>
+        <activity android:name=".sharedpref.LearnSharedPrefActivity"></activity>
+        <activity android:name=".recyclerview.SimpleRecyclerViewActivity" />
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".tablayout.SimpleTabLayoutActivity" />
+        <activity android:name=".dialog.DialogActivity" />
         <activity android:name=".databinding.SimpleDataBindingActivity" />
         <activity android:name=".fragment.SimpleFragmentActivity" />
         <activity

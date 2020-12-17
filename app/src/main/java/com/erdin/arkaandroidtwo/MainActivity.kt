@@ -8,7 +8,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.erdin.arkaandroidtwo.dialog.DialogActivity
+import com.erdin.arkaandroidtwo.recyclerview.SimpleRecyclerViewActivity
+import com.erdin.arkaandroidtwo.sharedpref.LearnSharedPrefActivity
+import com.erdin.arkaandroidtwo.tablayout.SimpleTabLayoutActivity
 import com.erdin.arkaandroidtwo.toolbar.SimpleToolbarActivity
+import com.erdin.arkaandroidtwo.webview.WebViewActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +26,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnActivityLinear = findViewById<Button>(R.id.btn_linear_layout)
         val btnActivityToolbar = findViewById<Button>(R.id.btn_toolbar)
         val btnActivityDialog = findViewById<Button>(R.id.btn_dialog)
+        val btnActivityTablayout = findViewById<Button>(R.id.btn_tablayout)
+        val btnActivityWebView = findViewById<Button>(R.id.btn_webview)
+        val btnActivityRyclerView = findViewById<Button>(R.id.btn_recycler_view)
+        val btnActivitySharedPref = findViewById<Button>(R.id.btn_shared_pref)
 
         btnActivityOne.setOnClickListener {
             val intentA = Intent(this, OneActivity::class.java)
@@ -36,6 +44,26 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnActivityDialog.setOnClickListener {
             val intentA = Intent(this, DialogActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityTablayout.setOnClickListener {
+            val intentA = Intent(this, SimpleTabLayoutActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityWebView.setOnClickListener {
+            val intentA = Intent(this, WebViewActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityRyclerView.setOnClickListener {
+            val intentA = Intent(this, SimpleRecyclerViewActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivitySharedPref.setOnClickListener {
+            val intentA = Intent(this, LearnSharedPrefActivity::class.java)
             startActivity(intentA)
         }
 

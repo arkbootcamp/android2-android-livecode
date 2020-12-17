@@ -25,4 +25,8 @@
     <string name="to_activity_toolbar">To Activity Toolbar</string>
     <string name="content">Content</string>
     <string name="to_dialog_activity">To Dialog Activity</string>
+    <string name="to_tab_layout_activity">To Tab Layout Activity</string>
+    <string name="to_webview_activity">To Webview Activity</string>
+    <string name="to_recyclerview_activity">To RecyclerView Activity</string>
+    <string name="to_shared_pref">To Shared Pref</string>
 </resources>
