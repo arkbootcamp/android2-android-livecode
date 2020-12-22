@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.erdin.arkaandroidtwo">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,8 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_arka_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ArkaAndroidTwo">
-        <activity android:name=".sharedpref.LearnSharedPrefActivity"></activity>
+        android:theme="@style/Theme.ArkaAndroidTwo"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".project.ProjectListActivity"></activity>
+        <activity android:name=".room.WordListActivity" />
+        <activity android:name=".room.AddWordActivity" />
+        <activity android:name=".sharedpref.LearnSharedPrefActivity" />
         <activity android:name=".recyclerview.SimpleRecyclerViewActivity" />
         <activity android:name=".webview.WebViewActivity" />
         <activity android:name=".tablayout.SimpleTabLayoutActivity" />

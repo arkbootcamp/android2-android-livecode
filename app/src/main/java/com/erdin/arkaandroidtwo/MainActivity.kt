@@ -8,7 +8,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.erdin.arkaandroidtwo.dialog.DialogActivity
+import com.erdin.arkaandroidtwo.project.ProjectListActivity
 import com.erdin.arkaandroidtwo.recyclerview.SimpleRecyclerViewActivity
+import com.erdin.arkaandroidtwo.room.WordListActivity
 import com.erdin.arkaandroidtwo.sharedpref.LearnSharedPrefActivity
 import com.erdin.arkaandroidtwo.tablayout.SimpleTabLayoutActivity
 import com.erdin.arkaandroidtwo.toolbar.SimpleToolbarActivity
@@ -30,6 +32,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnActivityWebView = findViewById<Button>(R.id.btn_webview)
         val btnActivityRyclerView = findViewById<Button>(R.id.btn_recycler_view)
         val btnActivitySharedPref = findViewById<Button>(R.id.btn_shared_pref)
+        val btnActivityRoom = findViewById<Button>(R.id.btn_word_activity)
+        val btnActivityRetrofit = findViewById<Button>(R.id.btn_activity_retrofit)
 
         btnActivityOne.setOnClickListener {
             val intentA = Intent(this, OneActivity::class.java)
@@ -64,6 +68,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnActivitySharedPref.setOnClickListener {
             val intentA = Intent(this, LearnSharedPrefActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityRoom.setOnClickListener {
+            val intentA = Intent(this, WordListActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityRetrofit.setOnClickListener {
+            val intentA = Intent(this, ProjectListActivity::class.java)
             startActivity(intentA)
         }
 

@@ -29,4 +29,6 @@
     <string name="to_webview_activity">To Webview Activity</string>
     <string name="to_recyclerview_activity">To RecyclerView Activity</string>
     <string name="to_shared_pref">To Shared Pref</string>
+    <string name="to_word_activity">To Word Activity</string>
+    <string name="to_project_retrofit">To Project Retrofit</string>
 </resources>
