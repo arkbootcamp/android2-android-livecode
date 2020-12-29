@@ -31,4 +31,5 @@
     <string name="to_shared_pref">To Shared Pref</string>
     <string name="to_word_activity">To Word Activity</string>
     <string name="to_project_retrofit">To Project Retrofit</string>
+    <string name="to_login_activity">To Login Activity</string>
 </resources>
