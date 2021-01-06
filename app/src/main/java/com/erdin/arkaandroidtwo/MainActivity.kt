@@ -9,7 +9,8 @@ import android.widget.Button
 import android.widget.Toast
 import com.erdin.arkaandroidtwo.dialog.DialogActivity
 import com.erdin.arkaandroidtwo.login.LoginActivity
-import com.erdin.arkaandroidtwo.project.ProjectListActivity
+import com.erdin.arkaandroidtwo.mvp.ProjectActivity
+import com.erdin.arkaandroidtwo.mvvm.LoginMvvmActivity
 import com.erdin.arkaandroidtwo.recyclerview.SimpleRecyclerViewActivity
 import com.erdin.arkaandroidtwo.room.WordListActivity
 import com.erdin.arkaandroidtwo.sharedpref.LearnSharedPrefActivity
@@ -79,12 +80,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         btnActivityRetrofit.setOnClickListener {
-            val intentA = Intent(this, ProjectListActivity::class.java)
+            val intentA = Intent(this, ProjectActivity::class.java)
             startActivity(intentA)
         }
 
         btnActivityLogin.setOnClickListener {
-            val intentA = Intent(this, LoginActivity::class.java)
+            val intentA = Intent(this, LoginMvvmActivity::class.java)
             startActivity(intentA)
         }
 

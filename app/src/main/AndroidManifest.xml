@@ -15,7 +15,9 @@
         android:theme="@style/Theme.ArkaAndroidTwo"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".login.LoginActivity"></activity>
+        <activity android:name=".mvp.ProjectActivity"/>
+        <activity android:name=".mvvm.LoginMvvmActivity" />
+        <activity android:name=".login.LoginActivity" />
         <activity android:name=".project.ProjectListActivity" />
         <activity android:name=".room.WordListActivity" />
         <activity android:name=".room.AddWordActivity" />
