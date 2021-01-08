@@ -11,6 +11,7 @@ import com.erdin.arkaandroidtwo.dialog.DialogActivity
 import com.erdin.arkaandroidtwo.login.LoginActivity
 import com.erdin.arkaandroidtwo.mvp.ProjectActivity
 import com.erdin.arkaandroidtwo.mvvm.LoginMvvmActivity
+import com.erdin.arkaandroidtwo.project.ProjectAddActivity
 import com.erdin.arkaandroidtwo.recyclerview.SimpleRecyclerViewActivity
 import com.erdin.arkaandroidtwo.room.WordListActivity
 import com.erdin.arkaandroidtwo.sharedpref.LearnSharedPrefActivity
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnActivityRoom = findViewById<Button>(R.id.btn_word_activity)
         val btnActivityRetrofit = findViewById<Button>(R.id.btn_activity_retrofit)
         val btnActivityLogin = findViewById<Button>(R.id.btn_activity_login)
+        val btnActivityAddProject = findViewById<Button>(R.id.btn_add_project)
 
         btnActivityOne.setOnClickListener {
             val intentA = Intent(this, OneActivity::class.java)
@@ -86,6 +88,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnActivityLogin.setOnClickListener {
             val intentA = Intent(this, LoginMvvmActivity::class.java)
+            startActivity(intentA)
+        }
+
+        btnActivityAddProject.setOnClickListener {
+            val intentA = Intent(this, ProjectAddActivity::class.java)
             startActivity(intentA)
         }
 
